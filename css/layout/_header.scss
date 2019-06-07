@@ -159,6 +159,7 @@ body.background{
 .head-bg{
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   // background: url('/img/EXTERIOR1.jpg') center/cover;
   position: relative;
   &::after{
@@ -232,12 +233,13 @@ body.background{
     -webkit-align-items: center;
     align-items: center;
     img{
-      // min-width: 100vw;
+      min-width: 100vw;
+      min-height: 100vh;
+      width: auto;
+      height: auto;
     }
   }
 }
-
-
 
 
 @media screen and (max-width:1100px){
