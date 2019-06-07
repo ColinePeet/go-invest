@@ -1194,7 +1194,7 @@ nav ul li a:hover {
   background: white;
   border-radius: 10px;
   height: 600px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .col-3 .case .news-case-bg {
@@ -1690,7 +1690,7 @@ section.contact .contact-info a {
   cursor: pointer;
 }
 
-aside {
+aside.bien-title {
   height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
