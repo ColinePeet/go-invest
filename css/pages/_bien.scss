@@ -155,7 +155,9 @@ aside{
 @media screen and (max-width:700px){
   .bien-contenu{
     .details{
-      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 20px;
     }
   }
   .p-large.bien-title{
