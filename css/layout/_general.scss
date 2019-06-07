@@ -1,0 +1,245 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* TYPO */
+h1, h2, h3, h4, h5{
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $gris;
+}
+
+/* title page bien */
+h1{
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-top: 0;
+}
+hr.full-title{
+    border: 1px solid $neutre;
+    margin: 10px 0 20px 0;
+}
+h4{
+    font-size: .9em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+h5{
+    font-weight: 500;
+    font-size: 1em;
+    padding-inline-start: 20px
+}
+
+/* title section */
+h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+.title-line{
+    border: 1px solid $gris;
+    width: 60px;
+}
+
+/* title liste biens */
+h3{
+    font-size: 1em;
+}
+.subtitle-line{
+    border: 1px solid $gris;
+    width: 15px;
+}
+
+.medium{
+    font-weight: 500;
+}
+.bold{
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: $gris;
+}
+p{
+    line-height: 1.5em;
+}
+.small{
+    font-size: .9em;
+}
+
+/* line */
+.yellow-line{
+    border: 2px solid $jaune;
+    margin: 0;
+}
+.light-yellow-line{
+    border: 1px solid $jaune;
+    margin: 0;
+}
+
+
+/* BUTTON */
+
+/* bouton sur fond blanc */
+button{
+    display: block;
+    margin: 50px auto 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 2px solid black;
+    background: none;
+    border-radius: 30px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    &:hover{
+        background: $soie;
+        color: white;
+        border: 2px solid $soie;
+    }
+}
+
+/* bouton sur fond noir */
+input[type=button]{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    background: none;
+    border-radius: 5px;
+    font-size: .9em;
+    min-width: 270px;
+    padding: 15px 17px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    &:hover{
+        background: $soie;
+        color: white;
+        border: 2px solid $soie;
+    }
+}
+
+
+/* BACKGROUND */
+.bg-jaune{
+    background-color: $jaune;
+    p, h1, h2, h3, a{
+        color: white; 
+     }
+     .title-line{
+        border: 1px solid white;
+    }
+    h2{
+        font-weight: 500;
+    }
+}
+.bg-soie{
+    background-color: $soie;
+    p, h1, h2, h3, a{
+        color: white; 
+     }
+    .title-line{
+        border: 1px solid white;
+    }
+    h2{
+        font-weight: 500;
+    }
+}
+.bg-neutre{
+    background-color: $neutre;
+}
+.bg-gris{
+    background-color: $gris;
+    p, h1, h2, h3, a{
+        color: white; 
+     }
+    .title-line{
+        border: 1px solid white;
+    }
+    h2{
+        font-weight: 500;
+    }
+}
+.bg-black{
+    background-color: $noir;
+    color: white;
+    p, h1, h2, h3, a{
+        color: white; 
+     }
+     h2{
+         font-weight: 500;
+     }
+     .title-line{
+        border: 1px solid white;
+    }
+}
+
+
+/* NAV */
+nav{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.1em;
+    ul{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        li{
+            list-style: none;
+            a{
+                color: white;
+                font-weight: 400;
+                line-height: 2.1em;
+                transition: .1s all ease-in-out;
+                letter-spacing: 1px;
+                &:hover{
+                    color: $soie;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+/* PADDING */
+
+/* sur les formulaire (contact & recherche par filtre) & contenu bien */
+.p-large{
+    padding: 100px 150px;
+}
+
+/* padding général sur les sections */
+.p-general{
+    padding: 100px 50px;
+}
+
+
+@media screen and (max-width:1100px){
+    .p-general{
+        padding: 80px 30px;
+    }
+    .p-large{
+        padding: 80px 80px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .p-general{
+        padding: 80px 20px;
+    }
+    .p-large{
+        padding: 80px 50px;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    button{
+        font-size: .9em;
+    }
+}

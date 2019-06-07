@@ -1,0 +1,157 @@
+.head-bg .head-button .onglet-actif{
+    background: #f1f0ef;
+}
+
+/* Background page inside */
+.head-bg.inside-page{
+    height: 400px;
+    background: url('/img/EXTERIOR6.jpg') center/cover;
+    .head-button {
+        top: 70%;
+    }
+}
+
+
+/* Filtre recherche */
+#search_form{
+    background: black;
+    padding: 5px 12% 60px 19%;
+    font-size: 1em;
+    .col-3{
+        .col{
+            break-inside: avoid;
+            .search_category{
+                display: flex;
+                flex-direction: column;
+                label{
+                    color: white;
+                    background-color: black; 
+                    min-width: 270px;
+                    max-width: 290px;
+                    padding: 12px 17px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                input[type=texte]{
+                    background: none;
+                    border: none;
+                    color: rgb(221, 221, 221);
+                    margin: 8px 17px;
+                    padding: 5px 0;
+                    &::placeholder{
+                        color: rgb(192, 192, 192);
+                    }
+                }
+                input[type=texte]:focus{
+                    border: none !important;
+                }
+                input[type=checkbox]{
+                    display: none;
+                }
+                input[type=checkbox]:checked + label {
+                    color: black;
+                    background-color: rgba($color: white, $alpha: .9); 
+                }
+                .info{
+                    color: gray;
+                    p{
+                        margin: 0;
+                        font-size: .8em;
+                        padding: 0 15px;
+                        opacity: 0;
+                        transition: .2s all ease-in-out;
+                    }
+                    .fa-info-circle{
+                        cursor: pointer;
+                    }
+                    .fa-info-circle:hover + p{
+                        opacity: 1;
+                    }
+                }
+            }
+            .input-txt{
+                margin-top: 15%;
+            }
+        }
+    }
+}
+
+.search-button{
+    text-align: center;
+}
+
+/* liste des biens après filtre */
+ .bien-filtre{
+     .results-info{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .col-3{
+        margin: 25px 0 40px 0;
+        .case{
+            height: 400px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            .news-case-bg{
+                height: 60%;
+                .bg-img{
+                    background: url('/img/house02.jpg') center/cover;
+                }
+            }
+            .news-case-txt{
+                height: 40%;
+                border-bottom: 2px solid $neutre;
+                border-right: 2px solid $neutre;
+                border-left: 2px solid $neutre;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            &:hover{
+                .news-case-txt{
+                    background: $neutre;
+                }
+            }
+        } 
+     }
+ }
+
+ .coups-de-coeur{
+     .col-3{
+        margin: 50px 0;
+     }
+ }
+
+
+
+@media screen and (max-width:1200px){
+    #search_form{
+        padding: 5px 80px 60px 80px;
+    }
+}
+@media screen and (max-width:900px){
+    #search_form{
+        padding: 5px 80px 60px 80px;
+        .col-3{
+            .col{
+                .search_category{
+                    label{
+                        min-width: 100px;
+                        max-width: 100%;
+                        padding: 12px 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:700px){
+    #search_form{
+        padding: 1px 30px 50px 30px;
+        .col-3{
+            column-count: 2;
+        }
+    }
+}
+
