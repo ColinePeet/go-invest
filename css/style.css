@@ -569,7 +569,6 @@ body.background::before {
 .head-bg {
   width: 100vw;
   height: 100vh;
-  max-height: 100vh;
   position: relative;
 }
 
@@ -628,8 +627,7 @@ body.background::before {
 
 .swiper-container {
   width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
+  height: 100%;
   z-index: -1;
 }
 
@@ -652,16 +650,12 @@ body.background::before {
   align-items: center;
 }
 
-.swiper-container .swiper-slide img {
-  min-width: 100vw;
-  min-height: 100vh;
-  width: auto;
-  height: auto;
-}
-
 @media screen and (max-width: 1100px) {
   .menu {
     width: 50%;
+  }
+  .head-bg {
+    height: 90vh;
   }
 }
 
@@ -670,7 +664,7 @@ body.background::before {
     width: 100%;
   }
   header .logo img {
-    width: 120px;
+    width: 100px;
   }
 }
 
@@ -753,6 +747,7 @@ footer.p-large {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  max-width: 100vw;
 }
 
 /* TYPO */
@@ -1017,7 +1012,7 @@ nav ul li a:hover {
     padding: 80px 20px;
   }
   .p-large {
-    padding: 80px 50px;
+    padding: 80px 35px;
   }
   h2 {
     font-size: 1.3em;
@@ -1286,11 +1281,14 @@ nav ul li a:hover {
             column-gap: 25px;
   }
   .slogan {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
 @media screen and (max-width: 700px) {
+  header .tel {
+    font-size: 1em;
+  }
   .col-3 {
     margin: 50px 0;
     -webkit-column-count: 1;
@@ -1299,7 +1297,7 @@ nav ul li a:hover {
             column-gap: 25px;
   }
   .slogan {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .head-bg .head-button div {
     font-size: 1em;
@@ -1510,6 +1508,9 @@ nav ul li a:hover {
   #search_form .col-3 {
     -webkit-column-count: 2;
             column-count: 2;
+  }
+  .head-bg.inside-page {
+    height: 50vh;
   }
 }
 
@@ -1813,16 +1814,16 @@ aside {
     margin-top: 40px;
   }
   .bien-background, .swiper-container2 {
-    height: 75vh;
+    height: 70vh;
+  }
+  aside {
+    height: 30vh;
   }
 }
 
 @media screen and (max-width: 700px) {
   .bien-contenu .details {
     width: 100%;
-  }
-  .bien-background, .swiper-container2 {
-    height: 60vh;
   }
   .p-large.bien-title {
     padding-top: 30px;

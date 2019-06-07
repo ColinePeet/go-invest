@@ -200,18 +200,21 @@
     column-gap: 25px;
   }
   .slogan{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
 @media screen and (max-width:700px){
+  header .tel{
+    font-size: 1em;
+  }
   .col-3{
     margin: 50px 0;
     column-count: 1;
     column-gap: 25px;
   }
   .slogan{
-    font-size: 1.1em;
+    font-size: 1em;
   }
   .head-bg .head-button div{
     font-size: 1em;
