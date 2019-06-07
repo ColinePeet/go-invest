@@ -1244,7 +1244,11 @@ nav ul li a:hover {
   font-size: 1em;
 }
 
-.col-3 .case .news-case-txt a {
+.col-3 .case .news-case-txt p {
+  font-weight: 400;
+}
+
+.col-3 .case .news-case-txt span {
   font-weight: 500;
   color: #4b4b4b;
   border-bottom: 1px solid #4b4b4b;
