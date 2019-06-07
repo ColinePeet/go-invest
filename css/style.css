@@ -1645,15 +1645,6 @@ section.contact .contact-info a {
   position: relative;
 }
 
-.bien-background::before {
-  content: '';
-  position: absolute;
-  background: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
 .swiper-container2 {
   width: 100vw;
   height: 80vh;

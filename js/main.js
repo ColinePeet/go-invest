@@ -88,37 +88,26 @@ $('.parent-slider').slick({
   });
 
 // swiper bien
-    // var swiper = new Swiper('.swiper-container2', {
-    //   slidesPerView: 1,
-    //   spaceBetween: 30,
-    //   loop: true,
-    //   effect: 'fade',
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //   },
-    //   autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //   },
-    //   navigation: {
-    //     nextEl: '.swiper-next',
-    //     prevEl: '.swiper-prev',
-    //   },
-    // });
-
     var swiper = new Swiper('.swiper-container2', {
+      slidesPerView: 1,
+      spaceBetween: 30,
       loop: true,
-        scrollbar: {
-          el: '.swiper-scrollbar',
-          hide: true,
-        },
-        navigation: {
-          nextEl: '.swiper-next',
-          prevEl: '.swiper-prev',
-        },
-      });
-    
+      effect: 'fade',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-next',
+        prevEl: '.swiper-prev',
+      },
+    });
+
+
 
 
 
