@@ -118,12 +118,12 @@ $('.parent-slider').slick({
 
 
 
-// let shareSocial = document.querySelector(".share");
-// let socialMedia = document.querySelector(".toggle-media");
+let shareSocial = document.querySelector(".share");
+let socialMedia = document.querySelector(".toggle-media");
 
-// shareSocial.addEventListener("click", function () {
-//   socialMedia.classList.toggle("active");
-// });
+shareSocial.addEventListener("click", function () {
+  socialMedia.classList.toggle("active");
+});
 
 
 // show more

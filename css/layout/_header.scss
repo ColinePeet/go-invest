@@ -209,6 +209,7 @@ body.background{
 .swiper-container {
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   z-index: -1;
   .swiper-slide {
     width: 100vw;
@@ -231,7 +232,7 @@ body.background{
     -webkit-align-items: center;
     align-items: center;
     img{
-      min-width: 100vw;
+      // min-width: 100vw;
     }
   }
 }

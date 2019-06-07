@@ -628,6 +628,7 @@ body.background::before {
 .swiper-container {
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   z-index: -1;
 }
 
@@ -648,10 +649,6 @@ body.background::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.swiper-container .swiper-slide img {
-  min-width: 100vw;
 }
 
 @media screen and (max-width: 1100px) {
@@ -1667,11 +1664,6 @@ section.contact .contact-info a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.swiper-container2 .swiper-slide img {
-  min-width: 100vw;
-  min-height: 80vh;
 }
 
 .swiper-container2 .prev-next {
