@@ -1639,6 +1639,8 @@ section.contact .contact-info a {
 
 .bien-background {
   width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
   height: 80vh;
   position: relative;
 }
