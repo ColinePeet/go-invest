@@ -461,6 +461,7 @@ header .tel a {
 
 .menu.active {
   right: 0;
+  overflow: scroll;
 }
 
 .burger.active :nth-child(1n) {
@@ -1188,13 +1189,16 @@ nav ul li a:hover {
           column-gap: 25px;
 }
 
-.col-3 .case {
+.col-3 .case-englobe {
+  padding-bottom: 30px;
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
+}
+
+.col-3 .case {
   background: white;
   border-radius: 10px;
   height: 600px;
-  padding-bottom: 30px;
 }
 
 .col-3 .case .news-case-bg {
@@ -1451,6 +1455,11 @@ nav ul li a:hover {
 
 .bien-filtre .col-3 {
   margin: 25px 0 40px 0;
+}
+
+.bien-filtre .col-3 .case-englobe {
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
 }
 
 .bien-filtre .col-3 .case {

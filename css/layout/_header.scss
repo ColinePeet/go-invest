@@ -75,6 +75,7 @@ header{
   transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
   &.active{
     right: 0;
+    overflow: scroll;
   }
 }
 .burger.active :nth-child(1n){
