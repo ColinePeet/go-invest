@@ -118,12 +118,12 @@ $('.parent-slider').slick({
 
 
 
-let shareSocial = document.querySelector(".share");
-let socialMedia = document.querySelector(".toggle-media");
+// let shareSocial = document.querySelector(".share");
+// let socialMedia = document.querySelector(".toggle-media");
 
-shareSocial.addEventListener("click", function () {
-  socialMedia.classList.toggle("active");
-});
+// shareSocial.addEventListener("click", function () {
+//   socialMedia.classList.toggle("active");
+// });
 
 
 // show more
@@ -156,3 +156,35 @@ shareSocial.addEventListener("click", function () {
 //       return false;
 //   });
 // });
+
+
+
+
+
+var registerCssTransitions = function () {
+  //add transition to .prev
+  $('.prev').cssPageTransitions({
+      elementsOut: 'article',
+      classOut: 'is-moveout-left',
+      classIn: 'is-movein-left',
+      animationEnded: function () {
+          $('.is-moveout-left').remove();
+          registerCssTransitions();
+      }
+  });
+
+  //add transitions to .next
+  $('.next').cssPageTransitions({
+      elementsOut: 'article',
+      classOut: 'is-moveout-right',
+      classIn: 'is-movein-right',
+      animationEnded: function () {
+          $('.is-moveout-right').remove();
+          registerCssTransitions();
+      }
+  });
+};
+
+$(document).ready(function () {
+  registerCssTransitions();
+});
