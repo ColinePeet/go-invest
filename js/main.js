@@ -1,4 +1,4 @@
-//valeur 1 : capture la hauteur à laquelle se situe la nav
+/* Background Black sur Onglet Burger */
 let stickyNav = $('.burger-onglet').offset().top; //offset top = ce qu'il y a de top au dessus de la nav
 
 $(window).scroll(function() {
@@ -10,7 +10,7 @@ $(window).scroll(function() {
     }
 });
 
-// classe active lorsque burger cliqué 
+/* On Click sur Onglet Burger */
 let burgerOnglet = document.querySelector(".burger-onglet");
 let myBurger = document.querySelector(".burger");
 let myMenu = document.querySelector(".menu");
@@ -28,7 +28,7 @@ burgerOnglet.addEventListener("click", function () {
 
 
 
-//SLIDER HOMEPAGE
+/* Slider in slider : section nouveautés */
 $('.parent-slider').slick({
     dots: true,
     infinite: true,
@@ -62,102 +62,44 @@ $('.parent-slider').slick({
         }
       }
     ]
-  });
-  $('.child-slider').slick({
-    slidesToShow: 1,
-    dots: false,
-    arrows: true,
-    centerMode: true,
-    adaptiveHeight: true,
-  
-    centerPadding: '0',
-    responsive: [{breakpoint: 1024,},{breakpoint: 600,},{breakpoint: 480,}]
-  })
-
-
-
-// swiper index
-  var swiperIndex = new Swiper('.swiper-container', {
-    spaceBetween: 0,
-    effect: 'fade',
-    centeredSlides: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-  });
-
-// swiper bien
-    var swiper = new Swiper('.swiper-container2', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      effect: 'fade',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-      },
-      navigation: {
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev',
-      },
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-let shareSocial = document.querySelector(".share");
-let socialMedia = document.querySelector(".toggle-media");
-
-shareSocial.addEventListener("click", function () {
-  socialMedia.classList.toggle("active");
 });
+$('.child-slider').slick({
+  slidesToShow: 1,
+  dots: false,
+  arrows: true,
+  centerMode: true,
+  adaptiveHeight: true,
+
+  centerPadding: '0',
+  responsive: [{breakpoint: 1024,},{breakpoint: 600,},{breakpoint: 480,}]
+})
 
 
-// show more
-// $(document).ready(function() {
-//   // Configure/customize these variables.
-//   var showChar = 100;  // How many characters are shown by default
-//   var moretext = "voir plus.";
-//   var lesstext = "voir moins";
 
-//   $('.more').each(function() {
-//       var content = $(this).html();
-//       if(content.length > showChar) {
-//           var c = content.substr(0, showChar);
-//           var h = content.substr(showChar, content.length - showChar);
-//           var html = c + '<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext ;
-//           $(this).html(html);
-//       }
-//   });
+/* Social Media toggle */
+// let shareSocial = document.querySelector(".share");
+// let socialMedia = document.querySelector(".toggle-media");
 
-//   $(".morelink").click(function(){
-//       if($(this).hasClass("less")) {
-//           $(this).removeClass("less");
-//           $(this).html(moretext);
-//       } else {
-//           $(this).addClass("less");
-//           $(this).html(lesstext);
-//       }
-//       $(this).parent().prev().toggle();
-//       $(this).prev().toggle();
-//       return false;
-//   });
+// shareSocial.addEventListener("click", function () {
+//   socialMedia.classList.toggle("active");
 // });
 
 
+/* Page fade-in/fade-out Transition */
 $(document).ready(function () {
   registerCssTransitions();
 });
+
+
+/* Scroll Reveal */
+let listElement = $(".hidden");
+
+$(window).scroll(function(){
+    let scrolling = $(window).scrollTop();
+    listElement.each(function(i, element){
+        let elementOffset = $(element).offset().top;
+        if(scrolling > elementOffset - $(window).height() + 50){
+            $(element).addClass("reveal");
+        }
+    })  
+})

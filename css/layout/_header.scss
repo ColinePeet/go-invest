@@ -4,7 +4,13 @@ html{
 body{
   background-color: white;
 }
-
+.hidden{
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.hidden.reveal{
+  opacity: 1;
+}
 
 
 
