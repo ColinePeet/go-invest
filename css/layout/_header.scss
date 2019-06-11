@@ -1,3 +1,13 @@
+html{
+  background-color: black;
+}
+body{
+  background-color: white;
+}
+
+
+
+
 /* HEADER */
 header{
   color: white;
@@ -209,7 +219,7 @@ body.background{
 .swiper-container {
   width: 100vw;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
   .swiper-slide {
     width: 100vw;
     height: 100vh;

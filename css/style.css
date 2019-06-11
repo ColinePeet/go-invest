@@ -346,6 +346,14 @@ template {
   display: none;
 }
 
+html {
+  background-color: black;
+}
+
+body {
+  background-color: white;
+}
+
 /* HEADER */
 header {
   color: white;
@@ -629,7 +637,7 @@ body.background::before {
 .swiper-container {
   width: 100vw;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .swiper-container .swiper-slide {
